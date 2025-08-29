@@ -1,8 +1,3 @@
-
-
-# Draft `README.md`
-
-````markdown
 # Capuchinbird Call Detector 🎶🦜
 
 A deep learning–powered tool for detecting **Capuchinbird calls** in audio recordings.  
@@ -119,15 +114,7 @@ MIT License © 2025 Your Name
 
 ---
 
-## 🔖 Repository Metadata
 
-* **Repo name:** `capuchinbird-call-detector`
-* **Short description:** Detect Capuchinbird calls in audio using deep learning & Streamlit UI.
-* **One-liner:** *“AI-powered birdcall detection with real-time audio visualization.”*
-
-```
-
----
 
 ### ✅ Output
 - **Repository name:** `capuchinbird-call-detector`
