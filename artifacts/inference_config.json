@@ -1,0 +1,26 @@
+{
+  "threshold": 0.6883680820465088,
+  "target_precision": 0.95,
+  "k_consecutive": 2,
+  "min_gap_seconds": 0.4,
+  "samplerate": 16000,
+  "window_samples": 50000,
+  "hop_samples": 8000,
+  "stft_frame_length": 320,
+  "stft_frame_step": 32,
+  "input_shape": [
+    1553,
+    257,
+    1
+  ],
+  "class_weight": {
+    "0": 0.6897810218978102,
+    "1": 1.8173076923076923
+  },
+  "label_mapping": {
+    "0": "not_capuchin",
+    "1": "capuchin"
+  },
+  "keras_model_path": "artifacts_capuchin/capuchin_model.keras",
+  "savedmodel_dir": "artifacts_capuchin/capuchin_model_export"
+}

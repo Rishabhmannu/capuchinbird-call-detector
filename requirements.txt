@@ -1,0 +1,8 @@
+tensorflow-macos==2.16.2
+tensorflow-metal   # version tied to tensorflow-macos
+numpy>=1.24,<2.0
+librosa>=0.10
+soundfile>=0.12
+matplotlib>=3.7
+streamlit>=1.30
+pandas>=2.0
