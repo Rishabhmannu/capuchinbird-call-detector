@@ -121,7 +121,5 @@ MIT License © 2025 Your Name
 - **Description (short):** Detect Capuchinbird calls in audio using deep learning & Streamlit UI.  
 - **One-liner:** *“AI-powered birdcall detection with real-time audio visualization.”*
 
----
 
-Would you like me to also include a **badges section** (e.g., Python version, Streamlit, TensorFlow) at the top of the README for a more polished, GitHub-style look?
 ```
