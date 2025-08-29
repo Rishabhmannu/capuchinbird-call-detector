@@ -114,12 +114,3 @@ MIT License © 2025 Your Name
 
 ---
 
-
-
-### ✅ Output
-- **Repository name:** `capuchinbird-call-detector`
-- **Description (short):** Detect Capuchinbird calls in audio using deep learning & Streamlit UI.  
-- **One-liner:** *“AI-powered birdcall detection with real-time audio visualization.”*
-
-
-```
