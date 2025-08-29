@@ -31,6 +31,32 @@ Built with TensorFlow, Streamlit, and signal processing techniques, this project
 - Download detected events as a **CSV** file.
 - Built with **TensorFlow on Apple Silicon** (MPS) for fast local inference.
 
+
+---
+
+## 🧠 Model & Performance
+
+The detection model is a lightweight **2D CNN** trained on spectrograms of audio windows:
+
+- **Architecture**: 2 Conv2D layers → Flatten → Dense (ReLU) → Dense (Sigmoid)  
+- **Parameters**: ~28K (tiny, fast to run locally, even on CPU/MPS)  
+- **Input**: STFT magnitude spectrograms of 50,000-sample (~3s) windows  
+- **Output**: Probability of Capuchinbird call in each window  
+
+### Training
+- **Dataset**: Positive (Capuchinbird calls) vs. Negative (other sounds) audio clips  
+- **Augmentations**: Basic slicing, padding, overlapping windows  
+- **Optimizer**: Adam (lr=0.001 with decay)  
+- **Class imbalance** handled with **class weights**  
+
+### Performance (Validation Set)
+- **Best AUC**: ~0.98  
+- **Best F1-score**: ~0.90 @ threshold ≈ 0.68  
+- **Precision/Recall tradeoff** adjustable at inference with threshold slider  
+
+The model is designed to **favor recall** (i.e., rarely miss true calls) while still keeping precision reasonable.  
+Post-processing with **k-consecutive window filtering** and **min-gap merging** reduces false positives from short noise bursts.
+
 ---
 
 ## 🚀 Getting Started
